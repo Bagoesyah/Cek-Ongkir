@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\City;
+use App\Models\Courier;
+use App\Models\Province;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -42,8 +45,6 @@ class HomeController extends Controller
 
         return redirect()->back();
     }
-
-
 
     public function getProvince()
     {
