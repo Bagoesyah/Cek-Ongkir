@@ -1,4 +1,4 @@
-@extends('views.welcome')
+@extends('welcome')
 
 @section('content')
 <div class="container">
@@ -54,7 +54,7 @@
                     <h4 class="my-0 font-weight-normal">Formulir Cek Ongkir</h4>
                 </div>
                 <div class="card-body">
-                <form action="{{ route('store') }}" method="POST">
+                <form method="POST" action="/store">
                     @csrf
                     <div class="form-row">
                         <div class="col">
